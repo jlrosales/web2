@@ -3551,9 +3551,26 @@ function generaError() {
 }
 
 function generaDatos(elemento) {
-    /*asp*/
-    alert(elemento.Nombre.toUpperCase()+ " "+elemento.Apellidos.toUpperCase()+" su curso es "+elemento.Curso.toUpperCase()+" y la jornada es "+elemento.Jornada.toUpperCase())
+    alert(elemento.Nombre.toUpperCase() + " " + elemento.Apellidos.toUpperCase() + " su curso es " + elemento.Curso.toUpperCase() + " y la jornada es " + elemento.Jornada.toUpperCase())
 
+    $("form").remove();
+    $("#alerta").remove();
+
+
+    
+
+    $('#formContent').append("<div id=datos class=mx-5 style=float:left!important><label>Nombre: </label>" + elemento.Nombre.toUpperCase() + " " + elemento.Apellidos.toUpperCase() + "<br>"
+        + "<label>Rut: </label>" + elemento.Rut + "<br>"
+        + "<label>Celular: </label>" + elemento.Celular + "<br>"
+        + "<label>Email Personal: </label>" + elemento.E_mail_Personal + "<br>"
+        + "<label>Email Curso: </label>" + elemento.E_mail_Curso + "<br>"
+        + "<label>Password: </label>"+elemento.Contrasena+"<br> "
+        + "<label>Curso: </label>"+elemento.Curso+"<br>"
+        + "<label>Jornada: </label>"+elemento.Jornada+"<br>"
+        + "</div>");
+
+
+    
 }
 
 
