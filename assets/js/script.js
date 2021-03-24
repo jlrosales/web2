@@ -3551,7 +3551,7 @@ function generaError() {
 }
 
 function generaDatos(elemento) {
-    alert(elemento.Nombre+ " "+elemento.Apellidos+" su curso es "+elemento.Curso+" y la jornada es "+elemento.Jornada)
+    alert(elemento.Nombre.toUpperCase()+ " "+elemento.Apellidos..toUpperCase()+" su curso es "+elemento.Curso.toUpperCase()+" y la jornada es "+elemento.Jornada.toUpperCase())
 
 }
 
