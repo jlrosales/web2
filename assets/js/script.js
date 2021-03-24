@@ -3551,6 +3551,7 @@ function generaError() {
 }
 
 function generaDatos(elemento) {
+    /*asp*/
     alert(elemento.Nombre.toUpperCase()+ " "+elemento.Apellidos.toUpperCase()+" su curso es "+elemento.Curso.toUpperCase()+" y la jornada es "+elemento.Jornada.toUpperCase())
 
 }
