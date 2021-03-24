@@ -3551,25 +3551,25 @@ function generaError() {
 }
 
 function generaDatos(elemento) {
-    alert(elemento.Nombre.toUpperCase() + " " + elemento.Apellidos.toUpperCase() + " su curso es " + elemento.Curso.toUpperCase() + " y la jornada es " + elemento.Jornada.toUpperCase())
-
     $("form").remove();
     $("#alerta").remove();
 
 
     
 
-    $('#formContent').append("<div id=datos class=mx-5 style=float:left!important><label>Nombre: </label>" + elemento.Nombre.toUpperCase() + " " + elemento.Apellidos.toUpperCase() + "<br>"
-        + "<label>Rut: </label>" + elemento.Rut + "<br>"
-        + "<label>Celular: </label>" + elemento.Celular + "<br>"
-        + "<label>Email Personal: </label>" + elemento.E_mail_Personal + "<br>"
-        + "<label>Email Curso: </label>" + elemento.E_mail_Curso + "<br>"
-        + "<label>Password: </label>"+elemento.Contrasena+"<br> "
-        + "<label>Curso: </label>"+elemento.Curso+"<br>"
-        + "<label>Jornada: </label>"+elemento.Jornada+"<br>"
+    $('#formContent').append("<div id=datos class=mx-5 style=text-align:left;><label><strong>Nombre:</strong> </label>" + elemento.Nombre.toUpperCase() + " " + elemento.Apellidos.toUpperCase() + "<br>"
+        + "<label><strong>Rut:</strong> </label>" + elemento.Rut + "<br>"
+        + "<label><strong>Celular:</strong> </label>" + elemento.Celular + "<br>"
+        + "<label><strong>Email Personal:</strong> </label>" + elemento.E_mail_Personal + "<br>"
+        + "<label><strong>Email Curso:</strong> </label>" + elemento.E_mail_Curso + "<br>"
+        + "<label><strong>Password:</strong> </label>"+elemento.Contrasena+"<br> "
+        + "<label><strong>Curso:</strong> </label>"+elemento.Curso+"<br>"
+        + "<label><strong>Jornada:</strong> </label>"+elemento.Jornada+"<br>"
         + "</div>");
 
 
+    
+    $('#datos').addClass("my-3")
     
 }
 
